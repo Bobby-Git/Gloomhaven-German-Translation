@@ -1,5 +1,3 @@
-# GH-German-Translation
-Deutsche Übersetzung der Sprachdatei von Gloomhaven in Steam
 
 # WICHTIGE ANMERKUNGEN!
 
