@@ -2607,7 +2607,7 @@ gui_abandon_quest_mp_tooltip,You can Abandon the Quest at the start of the round
 gui_abilities_table,Gemeisterte Fähigkeiten
 gui_ability_cards,Fähigkeitskarten
 gui_ability_table,Gemeisterte Fähigkeitskarten
-gui_ability_table_tooltip,<color=#CEAD5A>Mastered Abilities</color> are what allows Mercenary to actions in scenario.
+gui_ability_table_tooltip,<color=#CEAD5A>Mastered Abilities</color> are what allows Mercenaries to perform actions in scenarios.
 gui_accept_quest,Accept Quest
 gui_accept_quest_tip,all players must accept the Selected Quest before Travelling
 gui_achievement_complete,Vervollständige
@@ -2623,6 +2623,7 @@ gui_achievements,Erfolge
 gui_active_abilities,Aktive Fähigkeiten
 gui_active_ability,Aktive Fähigkeit
 gui_active_bonuses,Aktive Boni
+gui_add_description,Beschreibung hinzufügen:
 gui_additional_attack_modifiers,Zusätzliche Angriffsmodifikatoren
 gui_adv_character_role,Rolle:
 gui_adv_side_difficulty,Run Difficulty:
@@ -2660,6 +2661,7 @@ gui_adventure_complete,Komplett!
 gui_adventure_empty_slot,Söldner {0} hinzufügen
 gui_ally,Gruppe
 gui_apply_and_exit,Bestätigen & Schließen
+gui_apply_and_load,Bestätigen & Laden
 gui_assemble_party,Gruppe zusammenstellen
 gui_assemble_party_new_character,Neuer Söldner!
 gui_assemble_party_new_character_desc,"A new Mercenary has been added to the roster!
@@ -2687,8 +2689,7 @@ gui_assembly_party_select_hero_tip,Select any of the available Mercenaries to ad
 gui_assembly_party_select_hero_tip_title,Charakter hinzufügen
 gui_assembly_party_start,Bereit zum Start!
 gui_assembly_party_tip,Eine Gruppe muss aus mindestens 2 Söldner bestehen um in ein Abenteuer zu starten
-gui_assembly_remove_hero,"Entferne
-Söldner"
+gui_assembly_remove_hero,"Entferne Söldner"
 gui_assembly_select_hero,Wähle einen Söldner
 gui_attack_modifiers,Angriffsmodifikatoren
 gui_attack_modifiers_description,"Wenn eine Angriffsfähigkeit gespielt wird, wird für jedes einzelne Ziel ein Angriffsmodifikator ausgespielt"
@@ -2711,6 +2712,8 @@ gui_buy_confirmation_title,Gegenstand kaufen
 gui_buy_enhancement_confirmation_title,Verbesserung kaufen
 gui_buy_party_confirmation,Are you sure you want to unlock this party?
 gui_campaign,Kampagne
+gui_campaign_repeated_name,<color=#C53F3F>Kampagnenname</color> wird bereits verwendet. Bitte wähle einen anderen.
+gui_campaign_ruleset,Campaign Ruleset
 gui_cancel,Abbrechen
 gui_cancel_active_bonus,Click the icon to cancel the Active Ability
 gui_cancel_sending_error_report,Cancelling Error Report... Please wait
@@ -2750,6 +2753,7 @@ gui_confirm_movement,Bewegung bestätigen
 gui_confirm_pull,Ziehen bestätigen
 gui_confirm_push,Schieben bestätigen
 gui_confirm_targets,Ziele bestätigen
+gui_confirm_use_item,Gegenstand benutzen
 gui_confirmation,Bist du sicher?
 gui_confirmation_abandon_adventure_scenario,"Das Szenario gilt als verloren und du kehrst zur Karte zurück. Du behältst verdientes Gold, XP und Errungenschaften-Fortschritte."
 gui_confirmation_abandon_single_scenario,Das Szenario gilt als verloren und du kehrst zu Hauptmenü zurück.
@@ -2768,8 +2772,10 @@ gui_confirmation_exit_scenario,Szenario abbrechen?
 gui_confirmation_levelup_card,Diese Karte zu deinen Fähigkeitskarten hinzufügen?
 gui_confirmation_party_locked,Du kannst die Söldner jetzt nicht ändern.
 gui_confirmation_party_locked_title,Die Gruppe ist eingeloggt.
+gui_confirmation_perk_missing_remove_condition,Gesperrte Verbesserung
+gui_confirmation_perk_missing_remove_condition_warning,Diese Verbesserung kann nicht ausgewählt werden, da Du den benötigten Angriffsmodifikator nicht in Deinem Deck hast
 gui_confirmation_restart_message,"Bist du dir sicher, dass du die Runde neu starten willst?"
-gui_confirmation_restart_title,Neustart Runde
+gui_confirmation_restart_title,Runde neu starte
 gui_confirmation_return_mainmenu,Zurück zum Hauptmenü
 gui_confirmation_return_mainmenu,Zurück zum Menü
 gui_confirmation_return_mainmenu_map,Der gesamte Fortschritt wird gespeichert
@@ -2777,11 +2783,14 @@ gui_confirmation_return_mainmenu_scenario,Jeder Fortschritt in dieser Runde geht
 gui_confirmation_sell,Verkaufe {0}
 gui_confirmation_sell_equipped,"{0}  ist momentan von {1} ausgerüstet, trotzdem verkaufen?"
 gui_confirmation_sell_receive,Erhalte:
+gui_confirmation_skip_ftue,Gloomhaven is a very complex game. It's advised you play through the entire Tutorial before getting started.
+gui_confirmation_skip_mission,Gloomhaven is a very complex game. It's advised you play through the entire Tutorial before getting started.
 gui_confirmation_start_adventure,Reise beginnen
 gui_consume_element,Verbrauche {0}
 gui_continue,Fortsetzen
 gui_copy,Kopieren
 gui_create_error_report,Create Error Report
+gui_create_mod_confirmation,Neuen Mod erstellen
 gui_create_modconfig,Create ModConfig
 gui_create_modding,Create Mod
 gui_create_mods_desc,Create and manage your own personal mods and share them with the modding community
@@ -2790,6 +2799,8 @@ gui_current_turn,Aktueller Zug
 gui_custom_mods_title,Custom Mods:
 gui_custom_rulesets_desc,Activate Mods to apply them to your game's Ruleset.
 gui_custom_rulesets_title,Custom Rulesets
+gui_default_attack,Standard Attacke
+gui_default_move,Standard Bewegung
 gui_delete,Löschen
 gui_delete_party_confirmation,Willst Du das Savegame löschen?
 gui_delete_warning,Diese Aktion kann nicht rückgängig gemacht werden! Fortsetzen?
@@ -2798,8 +2809,12 @@ gui_difficulty_hard,Schwer
 gui_difficulty_insane,Unmöglich
 gui_difficulty_normal,Normal
 gui_difficulty_select,Schwierigkeit wählen
-gui_dungeon_victory,"Glückwunsch.  Du hast das Szenario geschafft.
-"
+gui_discard_card,"Discard ""{0}"""
+gui_discard_cards,"Discard Cards"
+gui_distribute_health,Redistribute Health Points
+gui_distribute_health_points,"<color=#C53F3FFF>Redistribute <sprite name=""Heal"" color=#C53F3FFF>{0} Health Points</color>"
+gui_distribute_health_unavailable,<color=#C53F3FFF>You haven't taken any Damage</color>
+gui_dungeon_victory,"Glückwunsch.  Du hast das Szenario geschafft."
 gui_dv_character_strengths,Stärken:
 gui_dv_character_weaknesses,Schwächen:
 gui_early_access,Early Access Build
@@ -2836,6 +2851,7 @@ gui_element_status_strong,Stark
 gui_element_status_waning,Schwindend
 gui_encounter,Begegnung!
 gui_encounter_received,Du hast erhalten
+gui_end_extra_turn,End Extra Turn
 gui_end_pull,Ziehen Ende
 gui_end_push,Schieben Ende
 gui_end_round,Rundenende
@@ -2928,6 +2944,7 @@ gui_guild_trainer,Trainer
 gui_guild_worldmap,Weltkarte
 gui_guildmaster_difficulty_title,Schwierigkeit
 gui_guildmaster_repeated_name,<color=#C53F3F>Guild Name</color> wird bereits verwendet. Bitte wähle einen anderen Namen.
+gui_guildmaster_ruleset,Guildmaster Ruleset
 gui_guildmaster_start_game,Spiel starten
 gui_guildmaster_tutorial_full,Gesamtes Tutorial
 gui_guildmaster_tutorial_introduction_descr,<color=#C2AF89FF>Einführung:</color> Erlebe die ersten Story- und Puzzel-Quests
@@ -3017,6 +3034,7 @@ gui_load_party_slot_owner,Owner:
 gui_load_scenario,Load Scenario
 gui_loading,Lädt
 gui_loading_dots,Lädt...
+gui_loading_state_compare,Comparing Player States.  Please wait...
 gui_loadout_enemies,Gegner
 gui_loadout_enter_scenario,Dungeon betreten
 gui_loadout_overview,Übersicht
@@ -3036,14 +3054,20 @@ gui_medium,Medium
 gui_mind_control,Gedankenkontrolle
 gui_mind_control_action,Dieser Charakter ist unter dem Einfluss einer Gedankenkontrolle für eine Aktion
 gui_mind_control_turn,Dieser Charakter ist unter dem Einfluss einer Gedankenkontrolle bei seiner nächsten Runde
-gui_mod_create_empty_name,Empty Mod name
+gui_mod_campaign_type,Kampagnen Mod
+gui_mod_create_empty_name,Leerer Mod Name
 gui_mod_create_invalid_char,The name for the Mod can't contain any characters that are not supported for directory names on your OS
 gui_mod_create_mod_exist,Mod with name '{0}' already exists
-gui_mod_created,Mod '{0}' wurde erschaffen
+gui_mod_created,Mod '{0}' wurde erstellt
+gui_mod_custom_level_type,Custom Level Mod										  
 gui_mod_deleted,Mod '{0}' wurde gelöscht
+gui_mod_guildmaster_type,Guildmaster Mod
 gui_mod_has_executables,Mod has executable
+gui_mod_invalid_type,Ungültiger Mod Typ
 gui_mod_is_active,Aktiv
 gui_mod_is_inactive,inaktiv
+gui_mod_language_type,Language Mod
+gui_mod_loading_dots,Lade Mods...
 gui_mod_not_tested_version,Version nicht getestet
 gui_mod_not_tested_version_desc,Mod was not tested on your build version. Do you want to continue?
 gui_mod_source_custom,Source: Custom Mod
@@ -3056,22 +3080,57 @@ gui_mod_uploading_begin,Mod hochladen '{0}'
 gui_mod_version,Version {0}
 gui_modded,Modded
 gui_modding,Modding
+gui_modding_add_mod_tooltip,Add Mod
 gui_modding_apply_mod,Please Wait.  Processing '{0}'
+gui_modding_campaign_mod,Campaign Mod
+gui_modding_cancel_create_ruleset_confirmation_title,Cancel Create Ruleset
+gui_modding_cancel_edit_ruleset_confirmation_title,Cancel Editing
+gui_modding_create_mod,Create New Mod
 gui_modding_create_new_ruleset,Create New Ruleset
-gui_modding_delete_ruleset,Ruleset '{0}' deleted
+gui_modding_create_ruleset_notification,<color=#F1DBAE>{0}</color> Created!
+gui_modding_create_view_title,Create New Mod
+gui_modding_created_mod_notification,<color=#F1DBAE>{0}</color> Mod Created
+gui_modding_custom_mod,Custom Mod
+gui_modding_customlevel_mod,Custom Level Mod
+gui_modding_delete_ruleset,Delete Ruleset
+gui_modding_delete_ruleset_notification,<color=#C53F3F>{0} has been deleted</color>
+gui_modding_edit_ruleset,Edit Ruleset
+gui_modding_error_creating_mod,An error occured while attempting to create a new mod
+gui_modding_error_saving_mod,An error occurred while attempting to save the mod.
+gui_modding_failed_to_create_preview,An error occurred while attempting to create the preview image for the mod.
 gui_modding_file_conflict,File Conflict
 gui_modding_file_conflict_desc,There is a collision between mods!
+gui_modding_finish_edit_ruleset,Finish Editing
+gui_modding_finish_edit_ruleset_confirmation,Editing this Ruleset will delete all existing save data for it
+gui_modding_guildmaster_mod,Guildmaster Mod
 gui_modding_invalid_ruleset_char,The name for the Ruleset can't contain any characters that are not supported for directory names on your OS
 gui_modding_invalid_ruleset_name,Invalid Ruleset name
+gui_modding_language_mod,Language Mod
+gui_modding_list_rulesets,Your Rulesets
+gui_modding_list_view_title,Your Mods
 gui_modding_load_error,"Current ModConfig has not been loaded. 
 Reverting to Core ModConfig.
 All ModConfig upgrades & fixes could be done in Modding Menu."
 gui_modding_menu,Modding
+gui_modding_mod_already_exists,Mod already exists.  Unable to create a new mod with this name.
+gui_modding_mod_type,Mod Type
+gui_modding_need_workshop_agreement,You must agree to the Steam Workshop terms to complete the upload
 gui_modding_notification,Modding Notification
+gui_modding_open_steam_workshop,Visit Steam Workshop
+gui_modding_play_ruleset_notification,<color=#F1DBAE>{0}</color> Ruleset is active!
+gui_modding_remove_mod_tooltip,Remove Mod
 gui_modding_ruleset_created,A new Ruleset folder has been created with the name '{0}'
 gui_modding_ruleset_dir_error,An error occurred attempting to create the new Ruleset directory
-gui_modding_ruleset_loaded_fail,Fehler beim laden von '{0}'
+gui_modding_ruleset_loaded_fail,Fehler beim Laden von '{0}'
 gui_modding_ruleset_loaded_ok,'{0}' erfolgreich geladen
+gui_modding_ruleset_lose_changes_confirmation,All changes to the Ruleset will be lost
+gui_modding_ruleset_play,Play
+gui_modding_steam_mod,Steam Mod
+gui_modding_unable_to_find_mod,Unable to find the files for this mod.  
+gui_modding_upload_failed,Upload failed
+gui_modding_upload_mod_tooltip,Upload Mod to Steam
+gui_modding_upload_successful,Upload completed successfully
+gui_modding_uploading_with_dots,Uploading Mod...
 gui_modding_wait_creating_ruleset,Please Wait. Creating new Ruleset '{0}'
 gui_modding_wait_loading_ruleset,Please Wait.  Loading '{0}'
 gui_modding_welcome_desc,"The first thing you will need to do is create a Custom Ruleset. 
@@ -3125,9 +3184,13 @@ gui_multiplayer_join,Join Session
 gui_multiplayer_join_session_title,Join Session:
 gui_multiplayer_joining_session,Szene wird geladen...
 gui_multiplayer_locked_tooltip,Multiplayer is unlocked after completing the full tutorial.
+gui_multiplayer_my_turn,Your <color=#F1DBAE>Turn</color>
 gui_multiplayer_party,Roles
 gui_multiplayer_remove_user,Benutzer entfernen
+gui_multiplayer_player_turn,{0}<color=#F1DBAE>'s Turn</color>
+gui_multiplayer_remove_user,Remove User
 gui_multiplayer_start_session,Host Session
+gui_multiplayer_view_player_deck,<color=#F1DBAE>Viewing</color> {0} <color=#F1DBAE>'s Ability Deck</color>
 gui_multiplayer_warning_text_waitingforcharassignment,Waiting for all players to have mercs assigned
 gui_multiplayer_warning_text_waitingforconnectingplayerstojoin,New players are currently joining the game. Halting progression until everyone has joined.
 gui_multiplayer_warning_text_waitingformoreplayers,Invite another player to continue playing Multiplayer or switch back to Single-player in the Player Menu.
@@ -3190,6 +3253,7 @@ gui_opt_audio_effects,Effekt Lautstärke
 gui_opt_audio_master,Master Lautstärke
 gui_opt_audio_music,Musik Lautstärke
 gui_opt_audio_mute_in_background,Mute In Background
+gui_opt_audio_ping,Multiplayer: Player Ping
 gui_opt_combat_log,Combat Log
 gui_opt_combat_log_abilities,Abilities
 gui_opt_combat_log_conditions,Conditions and Effects
@@ -3212,9 +3276,14 @@ gui_opt_control_camera_rl,Links drehen
 gui_opt_control_camera_rr,Rechts drehen
 gui_opt_control_camera_zoom_in,Zoom In
 gui_opt_control_camera_zoom_out,Zoom Out
+gui_opt_control_enable_second_click_hex_confirm,Enable Second Click Hex to Confirm
 gui_opt_control_other,Other controls
 gui_opt_control_other_dc,Alle Karten anzeigen
-gui_opt_control_other_hi,Objekte anzeigen
+gui_opt_control_other_dc_hero1,Display Mercenary 1 Cards
+gui_opt_control_other_dc_hero2,Display Mercenary 2 Cards
+gui_opt_control_other_dc_hero3,Display Mercenary 3 Cards
+gui_opt_control_other_dc_hero4,Display Mercenary 4 Cards
+gui_opt_control_other_hi,Objekte hervorheben
 gui_opt_control_reset,Reset
 gui_opt_control_targeting,Targeting Controls
 gui_opt_control_targeting_r,Drehen
@@ -3242,7 +3311,7 @@ gui_opt_graphics_skin_weight,Skin Weights
 gui_opt_graphics_soft_particles,Soft Particles
 gui_opt_graphics_texture_quality,Texture Qualität
 gui_opt_graphics_vsync,VSync Count
-gui_opt_lang_restart,To apply language application should be restarted
+gui_opt_lang_apply,Applying a different language requires the game to reload
 gui_opt_lang_title,Action Required
 gui_opt_language,Sprache
 gui_opt_shared_gold,Gemeinsames Gold
@@ -3267,6 +3336,7 @@ gui_partylevel,"Party Level: This is calculated by taking the average character 
 gui_pass,Pass
 gui_passive_attributes,Passive Attribute
 gui_passive_attributes_description,"Passive Attribute ermöglichen es dem Charakter negative Effekte zu ignorieren"
+gui_perform_long_rest,Perform Long Rest
 gui_perk_modifier_add,Füge hinzu
 gui_perk_modifier_remove,Entferne
 gui_perk_modifier_replace,Ersetze
@@ -3293,11 +3363,14 @@ gui_quest_group_story,Geschichte
 gui_quest_group_travel,Reise
 gui_quest_locked,This quest is locked
 gui_quest_reward_enhancementslots,Erhalte {0} Erweiterungsslot
+gui_quest_reward_gainreputation,Gain {0} Reputation
 gui_quest_reward_itemstock,{0} Plan
+gui_quest_reward_losereputation,Lose {0} Reputation
 gui_quest_reward_multiplayer,Multiplayer Mode
 gui_quest_reward_perk,Erhalte Verbesserung
 gui_quest_reward_perkpoint,Erhalte Verbesserungspunkt
 gui_quest_reward_perkpoints,Erhalte {0} Verbesserungspunkte
+gui_quest_reward_prosperity,Gain {0} Prosperity
 gui_quest_reward_unlock,{0} freigeschalten
 gui_quest_reward_unlockchapter,Kapitel{0} freigeschalten
 gui_quest_reward_unlockcharacter,Freigeschaltet: 
@@ -3309,18 +3382,20 @@ gui_quest_starting_location_missing,Diese Quest benötigt einen Startort
 gui_ready,Ready up!
 gui_redraw_card,"Redraw <color=""red"">(<sprite name=""Attack"" tint=1 >1 Self)"
 gui_refresh_items_tip,Gegenstand wiederherstellen
-gui_refresh_items_title,Wähle eine Gegenstand zum wiederherstellen
+gui_refresh_items_title,Wähle eine Gegenstand zum Wiederherstellen
 gui_refresh_mods,Mods aktualisieren
 gui_remove,Entferne
 gui_remove_player,Remove Player
 gui_renown,Renown
+gui_reset,Zurücksetzen
 gui_reset_character_level,Reset Mercenary
 gui_reset_character_level_confirmation,Reset Abilities
 gui_reset_character_level_tooltip,"<color=#CEAD5A>Reset Mercenary</color> returns a Mercenary's Mastered Abilities and Perks to the starting set and allows you to rebuild a character from level 1 up to their current level.
 Reset Mercenary will not affect the Mercenary's current XP."
 gui_reset_party,Gruppe zurücksetzen
 gui_restart,Neustart
-gui_restart_round,Neustart Runde
+gui_restart_round,Runde neu starten
+gui_restart_turn,Zug neu starten
 gui_result_lose_exit,Zurück zur Karte
 gui_result_win_exit,Dungeon verlassen
 gui_results_accomplishments,Errungenschaften
@@ -3389,11 +3464,13 @@ gui_skip,Überspringe
 gui_skip_action,Aktion überspringen
 gui_skip_attack,Angriff überspringen
 gui_skip_ftue,Tutorial überspringen
+gui_skip_mission,Mission überspringen
 gui_skip_movement,Bewegung überspringen
 gui_skip_pull,Ziehen überspringen
 gui_skip_push,Schieben überspringen
 gui_spawner,Einsprungpunkt
 gui_spawner_information,Nächste Runde
+gui_stadia_friends,Freunde
 gui_start,Start
 gui_start_campaign,Starte Kampagne
 gui_start_round_banner,Runde {0}
@@ -3401,6 +3478,9 @@ gui_stats,Basiswerte
 gui_steam_friends,Freunde
 gui_summon_card,Hero Summon
 gui_summoned_allies,Summoned Allies
+gui_swap_characters_positions_tip,Select {0}/2 characters to swap positions
+gui_swap_enemy_positions_tip,Select {0}/2 enemies to swap positions
+gui_swap_position_tip,Swap the {0}'s position with the {1}
 gui_take_damage,Erleide Schaden
 gui_take_damage_burn,Verbrauche 1 verfügbare Karte
 gui_take_damage_discard,Verbrauche 2 abgelegt Karten
@@ -3413,22 +3493,36 @@ gui_temple_description,"Spende dem Tempel der großen Eiche und erhalte x2 <font
 gui_tooltip_ability_choosing_1,Aktiviere eine Hälfte einer Karte
 gui_tooltip_ability_choosing_2,Aktiviere die übrige Hälft der verbleibenden Karte
 gui_tooltip_activebonus_target_selection_137,Choose target to add +3 Attack <sprite name=Attack>
+gui_tooltip_additional_target_effect,<color=#A050E0>{0}:</color> Select additional targets
 gui_tooltip_attack_modifiers,"Angriffsmodi-Deck: Wann immer ein Charakter angreift, wird einer der verbliebenen Modifikatoren gezogen und der Angriffswert wird entsprechend geändert. Die Punkte geben die derzeit verfügbare Anzahl der Karten im Deck an."
 gui_tooltip_consuming_available,"Click here to augment this action, consuming the element in the process."
 gui_tooltip_consuming_clicked,"Die Aktion wird erweitert. Klicke erneut, um abzubrechen und das Element freizugeben"
 gui_tooltip_consuming_disabled,"This action can be augmented by consuming element(s). You can only do this during the character's turn, and only if the required element has already been infused."
 gui_tooltip_consuming_unavailable,"This action can be augmented by consuming element(s). First, infuse the required element(s) by using certain other actions."
 gui_tooltip_deal_damage,"Wähle: Schaden erhalten, eine verfügbare Karte oder zwei abgelegte Karten abwerfen"
+gui_tooltip_deal_damage_companion,"Choose to Deal Damage to the {0}, Burn 1 of the {1}'s Available Cards or Burn 2 of his Discarded Cards"
 gui_tooltip_deal_damage_mandatory_use,must be used if damage is remaining
 gui_tooltip_deal_damage_mp,{0} has to choose how to take damage
+gui_tooltip_distribute_health,Reassign damage from yourself and summoned allies
 gui_tooltip_element_inert,Es ist momentan kein Element verfügbar. Elemente können durch bestimmte Aktionen erzeugt werden.
 gui_tooltip_element_infusing,Element Erstarkt. Dieses Element ist ab der nächsten Runde verfügbar.
 gui_tooltip_element_strong,"Element Stark. Dieses Element ist für den Rest dieser Runde und die gesamte nächste Runde verfügbar. Einmal benutzt, ist es für andere Charakter nicht mehr verfügbar."
 gui_tooltip_element_waning,"Element Schwindend. Dieses Element kann noch für den Rest dieser Runde genutzt werden. Einmal benutzt, ist es für andere Charakter nicht mehr verfügbar."
 gui_tooltip_extra_turn,Choose two cards to play immediatly
+gui_tooltip_extra_turn_both_actions_later,Select an Ability with a higher initiative than {0}
+gui_tooltip_extra_turn_both_actions_later_second_card,Select a second Ability (you cannot alter the initiatve order)
+gui_tooltip_extra_turn_bottom_action,Choose one card and immediatly play its bottom half
+gui_tooltip_extra_turn_top_action,Choose one card and immediatly play its top half
+gui_tooltip_forgo_actions_for_companion,Forgo the top and/or bottom actions of your turn to increase the Bear's attack and/or movement
 gui_tooltip_helpbox improved_short_rest_title,<color=#B52828>Unstoppable Destruction</color>
 gui_tooltip_long_rest,"Verliere eine abgeworfene Karte und bekomme den Rest zurück. Wende Heilung 2 auf Dich selbst an."
+gui_tooltip_not_enough_targets_selected,Not enough targets selected
+gui_tooltip_player_disarmed,"The {0} is <color=#A050E0>DISARMED</color> <size=180%><sprite name=""HoverDisarmed""></size>"
+gui_tooltip_player_immobilized,"The {0} is <color=#A050E0>IMMOBILIZED</color> <size=180%><sprite name=""HoverImmobilized""></size>"
 gui_tooltip_player_starting_placement,Mercenaries must be split evenly between entrance rooms to continue
+gui_tooltip_player_starting_placement_companion_summons,{0} must be placed so there is an adjacent empty hex to summon their companion
+gui_tooltip_player_stunned,"The {0} is <color=#A050E0>STUNNED</color> <size=180%><sprite name=""HoverStunned""></size>"
+gui_tooltip_player_wounded,"The {0} is <color=#A050E0>WOUNDED</color> <size=180%><sprite name=""HoverWounded""></size>"
 gui_tooltip_select_destroy_obstacle,Wähle ein Hindernis zum zerstören
 gui_tooltip_select_destroy_obstacles,Wähle Hindernisse zum zerstören
 gui_tooltip_select_lose_card,Wähle 1 Karte zum verbrauchen
@@ -3445,6 +3539,8 @@ gui_tooltip_short_rest,Verliere 1 zufällige Karte um alle abgelegten Karten wie
 gui_tooltip_short_rest_warning,Benötigt mindestens 2 abgelegte Karten
 gui_tooltip_single_target,Wähle ein einzelnes Ziel aus
 gui_tooltip_start_turn,"Wähle für jeden Charakter zwei Fähigkeitskarten oder Rast aus."
+gui_tooltip_summon,Summon {0}
+gui_tooltip_summon_select_hex,Select a hex to summon the {0}
 gui_tooltip_title_ability_choosing,Fähigkeitskarten auswählen
 gui_tooltip_title_deal_damage,Schadensphase
 gui_tooltip_title_start_turn,Rundenbeginn
@@ -3477,6 +3573,7 @@ gui_visit_workshop,Visit Workshop
 gui_wait_players_confirm_enter_scenario,Call to Arms
 gui_wait_players_confirm_quest,Quest Selected
 gui_wait_players_confirm_tip,Waiting for players to confirm...
+gui_warning_cancel_selected_cards,Cancel your selection to changes the Ability Cards!
 gui_warning_equip_max_cards,You cannot equip more cards!
 gui_warning_select_cards_other_player,You can only select cards for Mercenaries you control
 gui_wrong_ability_deck,Invalid <color=#C53F3FFF>Ability Deck</color>
