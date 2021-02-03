@@ -7,7 +7,7 @@ Ich freue mich über Jeden, der hier seine Hilfe anbietet. Sei es als Übersetze
 - Übersetzungen dürfen nur in einem Texteditor wie z.B. Notepad++ erfolgen. Jegliche Bearbeitung der .csv z.B. in Excel oder Word, würde zur Folge haben, dass die Datei in Gloomhaven nicht mehr funktioniert und der komplette Versionsstand unbenutzbar ist. Leider hab ich diese Erfahrung selbst machen müssen und dadurch viele Stunden verbrannt.
 
 - Die Übersetzung sollte immer in der ich, wir, ihr-Version erfolgen. Beispiele hierfür:
-  > Original: TYou’ll have to fight your way to it.
+  > Original: You’ll have to fight your way to it.
   > Übersetzung: Ihr müsst euch dorthin kämpfen.
   
   > Original: "This is a Bounty mission, which means to succeed you will need to kill a certain number of enemies."
